@@ -2,7 +2,7 @@
 from decimal import Decimal
 from uuid import uuid4
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, Response
-from backend.app import admin_user, current_user
+from backend.dependencies import admin_user, current_user
 from backend.schemas import Quantity, VehicleInput
 
 router = APIRouter(prefix='/api')

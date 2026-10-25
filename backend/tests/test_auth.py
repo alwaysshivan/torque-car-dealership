@@ -32,7 +32,7 @@ def test_login_and_profile(client, user):
 
 
 def test_expired_and_forged_tokens_rejected(client):
-    for secret, exp in [('test-only-secret', 1), ('wrong-secret', 9999999999)]:
+    for secret, exp in [('test-only-secret-at-least-32-characters', 1), ('wrong-secret-at-least-32-characters', 9999999999)]:
         token = jwt.encode({'sub': '1', 'exp': exp}, secret, algorithm='HS256')
         assert client.get('/api/auth/me', headers={'Authorization': f'Bearer {token}'}).status_code == 401
 
@@ -42,7 +42,7 @@ def test_records_survive_app_restart(tmp_path):
     from fastapi.testclient import TestClient
     path = tmp_path / 'persistent.sqlite3'
     payload = {'name': 'Persistent', 'email': 'persist@example.com', 'password': 'StrongPass123!'}
-    with TestClient(create_app(path, secret='testing')) as c:
+    with TestClient(create_app(path, secret='testing-secret-at-least-32-characters')) as c:
         assert c.post('/api/auth/register', json=payload).status_code == 201
-    with TestClient(create_app(path, secret='testing')) as c:
+    with TestClient(create_app(path, secret='testing-secret-at-least-32-characters')) as c:
         assert c.post('/api/auth/login', json={k: payload[k] for k in ('email', 'password')}).status_code == 200

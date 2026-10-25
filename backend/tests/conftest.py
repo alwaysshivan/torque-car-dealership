@@ -5,7 +5,7 @@ from backend.app import create_app
 
 @pytest.fixture
 def app(tmp_path):
-    return create_app(tmp_path / 'test.sqlite3', secret='test-only-secret')
+    return create_app(tmp_path / 'test.sqlite3', secret='test-only-secret-at-least-32-characters')
 
 
 @pytest.fixture

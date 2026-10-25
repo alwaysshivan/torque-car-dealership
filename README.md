@@ -163,7 +163,7 @@ npm test
 npm run build
 ```
 
-On macOS/Linux replace the Python path with `.venv/bin/python`. See [docs/TEST-REPORT.md](docs/TEST-REPORT.md) for actual results, scope, and limitations. The included Git bundle preserves the history for submission.
+On macOS/Linux replace the Python path with `.venv/bin/python`. See [docs/TEST-REPORT.md](docs/TEST-REPORT.md) for actual results, scope, and limitations. The published Git history preserves the staged development sequence for submission.
 
 ## My AI Usage
 

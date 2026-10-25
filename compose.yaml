@@ -1,0 +1,10 @@
+services:
+  torque:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - torque-data:/app/data
+    restart: unless-stopped
+volumes:
+  torque-data:

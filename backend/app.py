@@ -86,13 +86,8 @@ def create_app(database_path=None, secret=None):
         return user
 
     # API routes are registered before the frontend fallback.
-    try:
-        from backend.vehicles import router
-    except ModuleNotFoundError as exc:
-        if exc.name != 'backend.vehicles':
-            raise
-    else:
-        app.include_router(router)
+    from backend.vehicles import router
+    app.include_router(router)
 
     dist = ROOT / 'frontend' / 'dist'
     if dist.is_dir():

@@ -167,17 +167,11 @@ On macOS/Linux replace the Python path with `.venv/bin/python`. See [docs/TEST-R
 
 ## My AI Usage
 
-**Tool:** ChatGPT (Codex coding tools).
+ChatGPT (Codex) was used to generate and refine the backend, frontend, tests, and project documentation.
 
-**How it was used:** AI generated the initial tests and implementation, proposed the architecture, wrote authentication and transaction code, built the React/Tailwind interface and SVG illustrations, ran the automated checks, fixed validation/configuration failures, and prepared documentation and packaging. No code was copied from another project repository. Third-party dependencies are installed through their package registries.
+AI tools accelerated scaffolding and debugging. Validation included automated tests and a frontend production build; the complete authenticated browser workflow still needs a local walkthrough. Test results and verification limits are documented in [the test report](docs/TEST-REPORT.md).
 
-**Extent of assistance:** The implementation in this package is substantially AI-authored. Do not present it as unaided manual work. Review every file, rerun the tests, and explain the design and tradeoffs in your own words before the interview.
-
-**Reflection:** AI accelerated scaffolding and test iteration, but required validation: strict login payloads, browser-preview compatibility, and persistent transaction semantics needed explicit checks. Passing tests does not prove production readiness. The browser-preview service could not execute the Python runtime, so the integrated browser purchase/admin flow still needs a local walkthrough.
-
-**Co-authorship:** Every development commit includes `Co-authored-by: ChatGPT <chatgpt@users.noreply.github.com>`.
-
-**Raw interaction evidence:** [PROMPTS.md](PROMPTS.md) explains why private chat excerpts are not published here. The assignment still requires a reviewed raw chat export or an explicitly approved public chat link; this AI usage summary does not replace that requirement.
+[PROMPTS.md](PROMPTS.md) records the status of the raw interaction logs required for submission. Private conversation excerpts are not published in this repository.
 
 ## GitHub repository and development history
 

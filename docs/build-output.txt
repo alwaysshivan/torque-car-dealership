@@ -1,0 +1,14 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> torque-dealership@1.0.0 build
+> vite build
+
+vite v6.4.5 building for production...
+transforming...
+✓ 1582 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.54 kB │ gzip:  0.36 kB
+dist/assets/index-fEfLycs3.css   26.21 kB │ gzip:  6.84 kB
+dist/assets/index-CpKtNCc-.js   262.03 kB │ gzip: 80.61 kB
+✓ built in 1.78s

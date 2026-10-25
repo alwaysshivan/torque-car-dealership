@@ -6,14 +6,14 @@ npm warn Unknown env config "http-proxy". This will stop working in the next maj
 
  RUN  v3.2.7 /workspace/scratch/1c56d4b736c8/car-dealership/frontend
 
- ✓ src/VehicleCard.test.jsx > Vehicle card > disables purchase when stock is zero 114ms
- ✓ src/VehicleCard.test.jsx > Vehicle card > opens purchase with the selected vehicle 28ms
- ✓ src/VehicleCard.test.jsx > Vehicle card > only shows inventory controls for administrators 30ms
- ✓ src/App.test.jsx > starts at secure sign-in and lets visitors open registration 180ms
- ✓ src/App.test.jsx > shows a useful message when the server is unavailable 53ms
+ ✓ src/VehicleCard.test.jsx > Vehicle card > disables purchase when stock is zero 116ms
+ ✓ src/VehicleCard.test.jsx > Vehicle card > opens purchase with the selected vehicle 30ms
+ ✓ src/VehicleCard.test.jsx > Vehicle card > only shows inventory controls for administrators 33ms
+ ✓ src/App.test.jsx > starts at secure sign-in and lets visitors open registration 190ms
+ ✓ src/App.test.jsx > shows a useful message when the server is unavailable 47ms
 
  Test Files  2 passed (2)
       Tests  5 passed (5)
-   Start at  14:34:16
-   Duration  1.41s (transform 253ms, setup 274ms, collect 615ms, tests 407ms, environment 753ms, prepare 171ms)
+   Start at  14:40:37
+   Duration  1.40s (transform 285ms, setup 287ms, collect 638ms, tests 422ms, environment 801ms, prepare 179ms)
 

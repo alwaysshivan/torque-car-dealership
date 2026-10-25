@@ -45,4 +45,4 @@ def test_records_survive_app_restart(tmp_path):
     with TestClient(create_app(path, secret='testing')) as c:
         assert c.post('/api/auth/register', json=payload).status_code == 201
     with TestClient(create_app(path, secret='testing')) as c:
-        assert c.post('/api/auth/login', json=payload).status_code == 200
+        assert c.post('/api/auth/login', json={k: payload[k] for k in ('email', 'password')}).status_code == 200

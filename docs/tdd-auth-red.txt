@@ -1,0 +1,4 @@
+ImportError while loading conftest '/workspace/scratch/1c56d4b736c8/car-dealership/backend/tests/conftest.py'.
+backend/tests/conftest.py:3: in <module>
+    from backend.app import create_app
+E   ModuleNotFoundError: No module named 'backend.app'

@@ -18,7 +18,7 @@ def client(app):
 def user(client):
     payload = {'name': 'Siva', 'email': 'siva@example.com', 'password': 'StrongPass123!'}
     client.post('/api/auth/register', json=payload)
-    token = client.post('/api/auth/login', json=payload).json()['access_token']
+    token = client.post('/api/auth/login', json={k: payload[k] for k in ('email', 'password')}).json()['access_token']
     return {'Authorization': f'Bearer {token}'}
 
 

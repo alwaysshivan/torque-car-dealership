@@ -34,9 +34,8 @@ Purchasing is an inventory transaction. No money is collected, and no external o
 ## Before submitting the assignment
 
 - Read README.md and the test report in docs/TEST-REPORT.md.
-- Use the supplied Git history; do not upload only a fresh single-commit copy if the evaluator checks TDD.
-- Create an empty public Git repository, restore the included bundle, and push using the README instructions.
-- PROMPTS.md contains verbatim visible development messages, not a complete export of tool events. Add your actual full chat export or public share link before final submission, as the assignment requests raw AI logs.
+- The source and staged development history are published at https://github.com/alwaysshivan/torque-car-dealership. Use that repository link for submission.
+- Private chat excerpts are withheld from the public repository. Add a reviewed raw chat export or explicitly approved public share link before submission, as the assignment requests raw AI logs. Never include credentials or unrelated private conversation.
 - Add dashboard/purchase screenshots from your local run. The included screenshots show the sign-in and registration screens; an integrated browser walkthrough was not available in the build environment.
 
-The application is implemented and tested locally. A public repository and an optional live deployment have not been created for you.
+The application is implemented, tested locally, and published to GitHub. A live backend deployment has not been created.

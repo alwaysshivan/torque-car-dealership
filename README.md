@@ -1,6 +1,6 @@
 # Torque · Car Dealership Inventory System
 
-A full-stack car dealership workspace built for the supplied **TDD Kata: Car Dealership Inventory System** brief. React and Tailwind provide the single-page frontend; FastAPI exposes the protected REST API; SQLite stores accounts, vehicles, and purchase receipts on disk.
+Torque keeps a dealership’s vehicles, stock levels, and purchase receipts in one place. It was built for the **TDD Kata: Car Dealership Inventory System** assignment using React, Tailwind, FastAPI, and a persistent SQLite database.
 
 **First time on Windows? Read [START-HERE.md](START-HERE.md).**
 
@@ -177,25 +177,20 @@ On macOS/Linux replace the Python path with `.venv/bin/python`. See [docs/TEST-R
 
 **Co-authorship:** Every development commit includes `Co-authored-by: ChatGPT <chatgpt@users.noreply.github.com>`.
 
-**Raw interaction evidence:** [PROMPTS.md](PROMPTS.md) includes verbatim visible development messages. It is explicitly a partial transcript; add your exported full conversation or genuine public chat share link before submission. A summary is not a substitute for the raw logs required by the brief.
+**Raw interaction evidence:** [PROMPTS.md](PROMPTS.md) explains why private chat excerpts are not published here. The assignment still requires a reviewed raw chat export or an explicitly approved public chat link; this AI usage summary does not replace that requirement.
 
-## Publish the Git history
+## GitHub repository and development history
 
-No public repository was created in this session; the available GitHub connection does not provide a new-repository creation operation. Do not use `git init` and squash the project into one commit if the assessor expects TDD history.
-
-Create a new empty public repository in your own GitHub account, then clone the included bundle into a separate folder:
+The project source is published at **https://github.com/alwaysshivan/torque-car-dealership**.
 
 ```bash
-git clone dealership-history.bundle torque-submission
-cd torque-submission
-git remote remove origin
-git remote add origin YOUR_ACTUAL_NEW_REPOSITORY_URL
-git push -u origin main
+git clone https://github.com/alwaysshivan/torque-car-dealership.git
+cd torque-car-dealership
 ```
 
-Replace `YOUR_ACTUAL_NEW_REPOSITORY_URL` with the URL returned by GitHub. The bundle intentionally excludes generated frontend output and the local database; rebuild with npm when cloning. The ZIP's working tree includes the prebuilt output for easy running.
+Follow the setup instructions above to run it. The repository keeps the staged test-first, implementation, and refactor sequence. GitHub’s initial repository commit was retained, and the local development commits were replayed on top of it. Commit hashes and timestamps therefore differ from the original local history. Private conversation excerpts were omitted throughout; the AI co-author credits and disclosure remain.
 
-Optional live deployment needs a Python-capable host with a persistent disk mounted for `data/`. Static-only hosting cannot execute this FastAPI backend. The Dockerfile is provided as a starting point; deployment has not been performed.
+This GitHub repository hosts the source code. The FastAPI application has not been deployed to a live backend host. To run it online, use a Python-capable host with persistent storage for `data/`; static GitHub Pages hosting cannot execute the backend. The Dockerfile is provided as a starting point.
 
 ## Project map
 
